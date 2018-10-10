@@ -121,7 +121,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="d6f421ea196993dc3048f7ba96ef27a75a55b2a2" />
+            android:value="${fabricApiKey}" />
 
         <receiver
             android:name="com.toshi.service.NotificationDismissedReceiver"

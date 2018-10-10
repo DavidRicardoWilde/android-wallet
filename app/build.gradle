@@ -16,7 +16,7 @@
  */
 
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
+apply from: 'toshi.gradle'
 apply plugin: 'witness'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
@@ -38,6 +38,7 @@ android {
 
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [fabricApiKey: fabricKey]
     }
 
     configurations.all {

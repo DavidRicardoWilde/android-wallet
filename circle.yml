@@ -8,6 +8,9 @@ jobs:
 
     steps:
       - checkout
+
+      - run: printf "\nfabric=$FABRIC_API_KEY" >> api-keys.properties
+
       - run:
           name: ktlint
           command: ./gradlew ktlint
